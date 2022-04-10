@@ -1,0 +1,97 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 25px auto;
+    width: 350px;
+    max-height: 374px;
+    background-image: url(images/bg_card.png);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+    border-radius: 15px;
+    padding-top: 92px;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon_user{
+    width: 96px;
+    height: 96px;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.top_main_content{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+}
+.name_user{
+    font-weight: bold;
+    font-size: 18px;
+    color: #2E3349;
+}
+.age_user{
+    font-weight: normal;
+    font-size: 18px;
+    color: #6B7082;
+    margin-left: 8.5px;
+}
+.location_user{
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #6B7082;
+    margin-top: 8px;
+}
+.detail_user{
+    border-top: 1px solid #E8E9EC ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin-top: 24px;
+}
+.followers_user,
+.likes_user,
+.photos_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 24px;
+}
+.number_detail{
+    font-weight: bold;
+    font-size: 18px;
+    color: #2E3349;
+}
+.descrption_detail{
+    margin-top: 9px;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #6B7082;
+}
+@media screen and (max-width: 375px) {
+.card {
+    width: 326px;
+    min-height: 374px;
+}
+}
